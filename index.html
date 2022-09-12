@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- linking font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/4472/4472515.png" type="image/x-icon">
+    <!-- adding css link  -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- title  -->
+    <title>Todo List App</title>
+  </head>
+  <body>
+    <!-- main container area  -->
+    <div class="container">
+      <!-- title  -->
+      <h1>TODO APP</h1>
+      <!-- input text area  -->
+      <div class="input-area">
+        <i class="fa-solid fa-list"></i>
+        <!-- input text  -->
+        <input type="text" placeholder="Type Your Todo List.." />
+      </div>
+      <!-- complete all tasks and clear all the tasks  -->
+      <div class="complete-clear">
+        <!-- btn- complete all tasks  -->
+        <button onclick="deleteCheckedTask()">Complete All Tasks</button>
+        <!-- button - clear all tasks  -->
+        <button class="clear-btn">Clear All</button>
+      </div>
+      <!-- list of todo  -->
+      <ul class="task-box">
+        <!-- <li class="task">
+                            <label for="${id}">
+                                <input onclick="updateStatus(this)" type="checkbox" id="${id}" class="checklist" ${completed}>
+                                <p class="${completed}">${todo.name}</p>
+                            </label>
+                            <div class="delete-task">
+                                <ul class="task-menu">
+                                    <li onclick='deleteTask(${id}, "${filter}")'><i class="fa-solid fa-trash-can" id='trash-Box'></i>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>-->
+      </ul>
+
+      <!-- controls for filtering tasks begins -->
+      <div class="controls">
+        <div class="task_left" id="taskAvail">
+          <!-- <p class="taskLeft">0 tasks Left</p> -->
+        </div>
+        <!-- filter all the tasks  -->
+        <div class="filters">
+          <!-- all tasks  -->
+          <span class="all" id="all">All</span>
+          <!-- pending tasks  -->
+          <span id="pending">Pending</span>
+          <!-- completed tasks  -->
+          <span id="completed">Completed</span>
+        </div>
+      </div>
+      <!-- ends filtering tasks  -->
+    </div>
+    
+    <div class="credit">
+      <span>Designed By: Bhupender</span>
+      <img src="https://cdn-icons-png.flaticon.com/512/210/210545.png" alt="heart_image">
+    </div>
+    <!-- link with js file  -->
+    <script src="index.js"></script>
+  </body>
+</html>
